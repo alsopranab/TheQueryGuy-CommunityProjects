@@ -15,7 +15,6 @@ for repo in repos:
 print(f"Processing: {repo}")
 
 try:
-
     repo = repo.strip()
     repo = repo.replace("https://github.com/", "")
     repo = repo.replace(".git", "")
@@ -86,7 +85,7 @@ try:
     })
 
 except Exception as e:
-    print(f"Error: {e}")
+    print(f"Error processing {repo}: {e}")
 ```
 
 with open("projects.json", "w", encoding="utf-8") as f:
