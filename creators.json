@@ -1,1 +1,152 @@
-{}
+[
+  {
+    "creator_id": "alextheanalyst",
+    "name": "AlexTheAnalyst",
+    "github": "https://github.com/AlexTheAnalyst"
+  },
+  {
+    "creator_id": "jagansaravana07",
+    "name": "JaganSaravana07",
+    "github": "https://github.com/JaganSaravana07"
+  },
+  {
+    "creator_id": "ankurchavda",
+    "name": "ankurchavda",
+    "github": "https://github.com/ankurchavda"
+  },
+  {
+    "creator_id": "datatalksclub",
+    "name": "DataTalksClub",
+    "github": "https://github.com/DataTalksClub"
+  },
+  {
+    "creator_id": "oleg-agapov",
+    "name": "oleg-agapov",
+    "github": "https://github.com/oleg-agapov"
+  },
+  {
+    "creator_id": "danielbeach",
+    "name": "danielbeach",
+    "github": "https://github.com/danielbeach"
+  },
+  {
+    "creator_id": "scikit-learn",
+    "name": "scikit-learn",
+    "github": "https://github.com/scikit-learn"
+  },
+  {
+    "creator_id": "eriklindernoren",
+    "name": "eriklindernoren",
+    "github": "https://github.com/eriklindernoren"
+  },
+  {
+    "creator_id": "ageron",
+    "name": "ageron",
+    "github": "https://github.com/ageron"
+  },
+  {
+    "creator_id": "fastai",
+    "name": "fastai",
+    "github": "https://github.com/fastai"
+  },
+  {
+    "creator_id": "tensorflow",
+    "name": "tensorflow",
+    "github": "https://github.com/tensorflow"
+  },
+  {
+    "creator_id": "jarif87",
+    "name": "jarif87",
+    "github": "https://github.com/jarif87"
+  },
+  {
+    "creator_id": "microsoft",
+    "name": "microsoft",
+    "github": "https://github.com/microsoft"
+  },
+  {
+    "creator_id": "academic",
+    "name": "academic",
+    "github": "https://github.com/academic"
+  },
+  {
+    "creator_id": "pavelgrigoryevds",
+    "name": "PavelGrigoryevDS",
+    "github": "https://github.com/PavelGrigoryevDS"
+  },
+  {
+    "creator_id": "jbhuang0604",
+    "name": "jbhuang0604",
+    "github": "https://github.com/jbhuang0604"
+  },
+  {
+    "creator_id": "ethicalml",
+    "name": "EthicalML",
+    "github": "https://github.com/EthicalML"
+  },
+  {
+    "creator_id": "langchain-ai",
+    "name": "langchain-ai",
+    "github": "https://github.com/langchain-ai"
+  },
+  {
+    "creator_id": "run-llama",
+    "name": "run-llama",
+    "github": "https://github.com/run-llama"
+  },
+  {
+    "creator_id": "guipsamora",
+    "name": "guipsamora",
+    "github": "https://github.com/guipsamora"
+  },
+  {
+    "creator_id": "keithgalli",
+    "name": "KeithGalli",
+    "github": "https://github.com/KeithGalli"
+  },
+  {
+    "creator_id": "karanpratapsingh",
+    "name": "karanpratapsingh",
+    "github": "https://github.com/karanpratapsingh"
+  },
+  {
+    "creator_id": "apache",
+    "name": "apache",
+    "github": "https://github.com/apache"
+  },
+  {
+    "creator_id": "dbt-labs",
+    "name": "dbt-labs",
+    "github": "https://github.com/dbt-labs"
+  },
+  {
+    "creator_id": "kubeflow",
+    "name": "kubeflow",
+    "github": "https://github.com/kubeflow"
+  },
+  {
+    "creator_id": "huggingface",
+    "name": "huggingface",
+    "github": "https://github.com/huggingface"
+  },
+  {
+    "creator_id": "openai",
+    "name": "openai",
+    "github": "https://github.com/openai"
+  },
+  {
+    "creator_id": "rasbt",
+    "name": "rasbt",
+    "github": "https://github.com/rasbt"
+  },
+  {
+    "creator_id": "willkoehrsen",
+    "name": "WillKoehrsen",
+    "github": "https://github.com/WillKoehrsen"
+  },
+  {
+    "creator_id": "krishnaik06",
+    "name": "krishnaik06",
+    "github": "https://github.com/krishnaik06"
+  }
+]
