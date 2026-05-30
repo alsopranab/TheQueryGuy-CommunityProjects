@@ -4,8 +4,6 @@ import requests
 projects = []
 creators = {}
 
-# Read repositories
-
 with open("repos.txt", "r", encoding="utf-8") as f:
 repos = [r.strip() for r in f.readlines() if r.strip()]
 
@@ -14,11 +12,10 @@ print(f"Found {len(repos)} repositories")
 for repo in repos:
 
 ```
-print(f"\nProcessing: {repo}")
+print(f"Processing: {repo}")
 
 try:
 
-    # Clean URL
     repo = repo.strip()
     repo = repo.replace("https://github.com/", "")
     repo = repo.replace(".git", "")
@@ -34,18 +31,11 @@ try:
 
     url = f"https://api.github.com/repos/{owner}/{repository}"
 
-    response = requests.get(
-        url,
-        headers={
-            "Accept": "application/vnd.github+json"
-        },
-        timeout=30
-    )
+    response = requests.get(url, timeout=30)
 
     print(f"{url} -> {response.status_code}")
 
     if response.status_code != 200:
-        print("Repository not accessible")
         continue
 
     data = response.json()
@@ -65,17 +55,14 @@ try:
     mapping = {
         "sql": "SQL",
         "mysql": "SQL",
-        "postgresql": "SQL",
         "excel": "Excel",
         "powerbi": "PowerBI",
-        "power-bi": "PowerBI",
         "python": "Python",
         "machine-learning": "MachineLearning",
         "deep-learning": "DeepLearning",
         "computer-vision": "ComputerVision",
         "data-engineering": "DataEngineering",
-        "generative-ai": "GenAI",
-        "genai": "GenAI"
+        "generative-ai": "GenAI"
     }
 
     for topic in topics:
@@ -94,38 +81,19 @@ try:
         "stars": data.get("stargazers_count", 0),
         "forks": data.get("forks_count", 0),
         "language": data.get("language"),
-        "license": (
-            data["license"]["spdx_id"]
-            if data.get("license")
-            else "Unknown"
-        ),
+        "license": data["license"]["spdx_id"] if data.get("license") else "Unknown",
         "github_url": data.get("html_url")
     })
 
-    print(f"Added: {data.get('name')}")
-
 except Exception as e:
-    print(f"Error processing {repo}")
-    print(str(e))
+    print(f"Error: {e}")
 ```
 
-# Save Projects
-
 with open("projects.json", "w", encoding="utf-8") as f:
-json.dump(projects, f, indent=2, ensure_ascii=False)
-
-# Save Creators
+json.dump(projects, f, indent=2)
 
 with open("creators.json", "w", encoding="utf-8") as f:
-json.dump(
-list(creators.values()),
-f,
-indent=2,
-ensure_ascii=False
-)
+json.dump(list(creators.values()), f, indent=2)
 
-print("\n=================================")
 print(f"Projects: {len(projects)}")
 print(f"Creators: {len(creators)}")
-print("Catalog Generated Successfully")
-print("=================================")
